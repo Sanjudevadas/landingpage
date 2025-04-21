@@ -18,7 +18,7 @@ const Header = () => {
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
-            className="text-blue-950 hover:text-blue-500 font-medium"
+            className="text-blue-950 hover:text-blue-500 font-semibold"
           >
             {item}
           </a>
@@ -29,8 +29,9 @@ const Header = () => {
       <div className="hidden md:block">
         <a
           href="#quote"
-          className="bg-blue-950 text-white font-medium py-2 px-4 rounded hover:bg-blue-600 transition"
-        >
+          className="border border-blue-950 text-blue-950 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-medium transition"
+            
+          >      
           Get Quote
         </a>
       </div>
@@ -55,8 +56,10 @@ const Header = () => {
           ))}
           <a
             href="#quote"
-            className="bg-blue-950 text-white font-medium py-2 px-4 rounded hover:bg-blue-600 transition"
-          >
+              className="border border-blue-950 text-blue-950 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-medium transition"
+            
+          >              
+            
             Get Quote
           </a>
         </div>
