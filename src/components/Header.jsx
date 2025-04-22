@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Optional: lucide icons
 import logo from '../assets/logo.png';
+//import sanjulogo from '../assets/sanjulogo.png'; // Optional: logo image
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -18,7 +19,7 @@ const Header = () => {
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
-            className="text-blue-950 hover:text-blue-500 font-semibold"
+            className="text-blue-500 hover:text-blue-950 font-semibold"
           >
             {item}
           </a>
@@ -29,7 +30,7 @@ const Header = () => {
       <div className="hidden md:block">
         <a
           href="#quote"
-          className="border border-blue-950 text-blue-950 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-medium transition"
+          className="border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-medium transition"
             
           >      
           Get Quote
@@ -49,7 +50,7 @@ const Header = () => {
               key={item}
               href={`#${item.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="text-blue-950 hover:text-blue-500 font-medium"
+              className="text-blue-500 hover:text-blue-600 font-medium"
             >
               {item}
             </a>

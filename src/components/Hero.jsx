@@ -3,7 +3,9 @@ import hero from "../assets/hero.jpg";
 
 function Hero() {
   return (
-    <section className="bg-gray-50 py-40 px-6 md:px-20">
+<section className="bg-gradient-to-r from-indigo-100 via-white to-blue-100 py-30 px-6 md:px-20">
+
+   
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left content */}
         <div className="flex-1 text-center md:text-left animate__animated animate__fadeIn">
@@ -43,11 +45,17 @@ function Hero() {
 
         {/* Right image */}
         <div className="flex-1 animate__animated animate__fadeIn animate__delay-1s">
-          <img
-            src={hero}
-            alt="Business illustration"
-            className="w-full max-w-md mx-auto rounded-md"
-          />
+
+        <img
+    src={hero}
+    alt="Base"
+    className="w-full rounded-2xl"
+  />
+
+  
+
+
+       
         </div>
       </div>
     </section>
