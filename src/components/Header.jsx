@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Optional: lucide icons
-import logo from '../assets/logo.png';
+//import logo from '../assets/logo.png';
 //import sanjulogo from '../assets/sanjulogo.png'; // Optional: logo image
+import testlogo from '../assets/testlogo.png';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -9,28 +10,30 @@ const Header = () => {
     <header className="bg-transparent backdrop-blur-md backdrop-filter shadow-md  px-6 flex justify-between items-center fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       <div className="flex items-center">
-        <img src={logo} alt="Company Logo" className="w-25" />
+        <img src={testlogo} alt="Company Logo" className="w-25" />
        
       </div>
 
       {/* Desktop Nav */}
-      <nav className="hidden md:flex space-x-6">
-        {['About', 'Services', 'Testimonials', 'Contact'].map((item) => (
-          <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
-            className="text-blue-500 hover:text-blue-950 font-semibold"
-          >
-            {item}
-          </a>
-        ))}
-      </nav>
+      <nav className="hidden md:flex items-center space-x-6 bg-white p-4 rounded-xl shadow-md">
+  {['About', 'Services', 'Testimonials', 'Contact'].map((item) => (
+    <a
+      key={item}
+      href={`#${item.toLowerCase()}`}
+      className="relative text-purple-900 font-semibold transition-all duration-300 hover:text-blue-900 hover:underline underline-offset-8 decoration-2"
+    >
+      {item}
+      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  ))}
+</nav>
+
 
       {/* Get Quote Button */}
       <div className="hidden md:block">
         <a
-          href="#quote"
-          className="border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-medium transition"
+          href="#contact"
+          className="border border-purple-900 text-purple-900 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-medium transition"
             
           >      
           Get Quote
@@ -45,18 +48,18 @@ const Header = () => {
       {/* Mobile Menu Drawer */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-start space-y-4 px-6 py-4 md:hidden">
-          {['About', 'Services', 'Testimonial', 'Contact'].map((item) => (
+          {['About', 'Services', 'Testimonials', 'Contact'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="text-blue-500 hover:text-blue-600 font-medium"
+              className="text-purple-900 hover:text-blue-600 font-medium"
             >
               {item}
             </a>
           ))}
           <a
-            href="#quote"
+            href="#contact"
               className="border border-blue-950 text-blue-950 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-medium transition"
             
           >              

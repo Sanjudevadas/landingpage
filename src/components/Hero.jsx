@@ -9,7 +9,7 @@ function Hero() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left content */}
         <div className="flex-1 text-center md:text-left animate__animated animate__fadeIn">
-          <h4 className="text-blue-600 text-lg font-semibold flex items-center gap-2 justify-center md:justify-start mb-2">
+          <h4 className="text-blue-950 text-lg font-semibold flex items-center gap-2 justify-center md:justify-start mb-2">
             <Info className="w-5 h-5" />
             ut perspiciatis unde omnis iste natus  
           </h4>
@@ -18,7 +18,7 @@ function Hero() {
             <span className="block xl:inline">
               Lorem ipsum dolor sit amet  
             </span>
-            <span className="block text-indigo-600 xl:inline">
+            <span className="block text-purple-900 xl:inline">
               adipiscing elit sed do
             </span>
           </h1>
@@ -30,7 +30,7 @@ function Hero() {
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#services"
-              className="bg-blue-950 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-medium transition"
+              className="bg-purple-900 hover:bg-blue-950 text-white px-6 py-3 rounded-md text-lg font-medium transition"
             >
               Explore Services
             </a>
